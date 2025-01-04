@@ -6,7 +6,7 @@ void main() {
   printTable(number);
 }
 
- printTable(num number) {
+printTable(num number) {
   for (var i = 1; i <= 10; i++) {
     print("$number x $i = ${number * i}");
   }
