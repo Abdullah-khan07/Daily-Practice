@@ -1,10 +1,27 @@
-import 'dart:io';
 
+import 'dart:io';
 void main (){
-  num abc = sumoftwonumber(value1:45, value2: 100);
-  print(abc);
+  bool login = loginfunction();
+  print(login);
 }
- num sumoftwonumber ({required value1 , required value2  }){
-  num result = ( value1+value2);
-  return (result);
+
+bool loginfunction (){
+  bool login =(false);
+  while (login== false) {
+    stdout.write("please input the email =");
+    String email =stdin.readLineSync()!;
+     stdout.write("please input the password =");
+     String password =stdin.readLineSync()!;
+    if (email== "abdullah" && password == "5678") {
+      print("login suceesful");
+      login = true;
+      
+    } else {
+      print("login fail");
+      
+    }
+  }
+  return(login);
+
 }
+
