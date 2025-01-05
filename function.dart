@@ -1,13 +1,21 @@
 import 'dart:io';
 
-void main() {
-  stdout.write("Enter the number for which you want to print the table: ");
-  num number = num.parse(stdin.readLineSync()!);
-  printTable(number);
+void main (){
+  print("parents");
+  marksheet();
+  print("Teacher");
+  marksheet();
+  print("Students");
+  marksheet();
 }
-
-printTable(num number) {
-  for (var i = 1; i <= 10; i++) {
-    print("$number x $i = ${number * i}");
+marksheet (){
+  print("Name");
+  num parcentage =50;
+  if (parcentage > 50) {
+    print("pass");
+    
+  } else {
+    print("fail");
+    
   }
 }
