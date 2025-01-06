@@ -1,12 +1,9 @@
-import 'dart:io';
-
 void main (){
-  // Function 1: Add two numbers
-print("please enter the two number");
-  int add = addtwonumber(56, 78);
-  print(add);
+  // Function 2: Subtract two numbers
+  print("plese enter the value");
+  num number = Subtractvalue(89, 55);
+  print(number);
 }
-int addtwonumber(int a ,int b){
-  return (a+b);
-
+num Subtractvalue(value1,value2){
+return (value1-value2);
 }
