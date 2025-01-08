@@ -1,12 +1,11 @@
-void main() { 
-  num vowelsCount = countVowels("example input"); 
-  print(vowelsCount);
-  
-
- 
+double celsiusToFahrenheit(double celsius) {
+  // Celsius ko Fahrenheit mein convert karne ka formula use kar rahe hain
+  return (celsius * 9 / 5) + 32;
 }
 
-num countVowels(String input) {
-  final vowels = {'a', 'e', 'i', 'o', 'u'};
-  return input.toLowerCase().split('').where((char) => vowels.contains(char)).length;
+void main() {
+  // Example usage
+  double celsius = 11;
+  double fahrenheit = celsiusToFahrenheit(celsius);
+  print('$celsius°C is equal to $fahrenheit°F');
 }
