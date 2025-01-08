@@ -1,9 +1,12 @@
 void main (){
-  // Function 2: Subtract two numbers
-  print("plese enter the value");
-  num number = Subtractvalue(89, 55);
-  print(number);
+num numbers = Divide(100, 5);
+print(numbers); // Output: 20.0
 }
-num Subtractvalue(value1,value2){
-return (value1-value2);
+// Function 4: Divide two numbers
+num Divide(int a, int b) {
+  if (b == 0) {
+    throw ArgumentError("Cannot divide by zero");
+  }
+  num result = a / b;
+  return num.parse(result.toStringAsFixed(1));
 }
