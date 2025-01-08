@@ -1,9 +1,12 @@
-void main (){
-  /////Function 5: Reverse a string
-String name = ReverseString("Punjab");
-print(name);
+void main() { 
+  num vowelsCount = countVowels("example input"); 
+  print(vowelsCount);
   
+
+ 
 }
-String ReverseString ( String input){
-   return input.split('').reversed.join('');
+
+num countVowels(String input) {
+  final vowels = {'a', 'e', 'i', 'o', 'u'};
+  return input.toLowerCase().split('').where((char) => vowels.contains(char)).length;
 }
